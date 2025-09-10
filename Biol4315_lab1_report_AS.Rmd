@@ -29,7 +29,7 @@ plot(pressure)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
-```{r, echo=FALSE}
+```{r, eval=FALSE}
 install.packages("vegan")
 ```
 
@@ -41,4 +41,3 @@ ggplot(cars, mapping = aes(x = dist, y = speed)) + geom_point() + labs(title = "
        x = "Distance",
        y = "Speed")
 ```
-
