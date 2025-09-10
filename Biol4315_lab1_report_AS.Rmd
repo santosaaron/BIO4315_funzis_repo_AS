@@ -7,6 +7,7 @@ date: "2025-09-10"
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+# Nava Meadi's Forked Repo
 
 ## R Markdown
 
@@ -27,3 +28,17 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r, echo=FALSE}
+install.packages("vegan")
+```
+
+Now we are going to load the ggplot2 package and map a scatter plot of speed vs dist from the cars dataset
+
+```{r}
+library(ggplot2)
+ggplot(cars, mapping = aes(x = dist, y = speed)) + geom_point() + labs(title = "Scatter Plot of Cars Data",
+       x = "Distance",
+       y = "Speed")
+```
+
